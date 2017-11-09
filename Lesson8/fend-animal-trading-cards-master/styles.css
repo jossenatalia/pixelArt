@@ -1,19 +1,45 @@
-/* add your CSS here */
 #container {
-    width: 300px;;
-    border: 0.5px solid #B1B1B1;
-    box-shadow: 10px 10px 5px #C5C5C5;
-    padding: 10px;
+  width: 300px;
+  border: 1px solid #EEE;
+  border-radius: 15px;
+  box-shadow: 7px 7px 7px #C5C5C5;
+  padding: 0px 10px 10px 10px;
+  font-size: 12px;
+  text-align: justify;
+  background-color: #f9e8eb;
 }
+
+#container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 img {
-    width: 300px;
-    border: 0.5px solid #B1B1B1;
-    margin-bottom: 10px;
+  width: 300px;
+  border: 1px solid #EEE;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+#info {
+  font-style: italic;
 }
 
 #description {
-    width: 300px;
-    border: 0.5px solid #B1B1B1;
-    /* box-shadow: 10px 10px 5px #C5C5C5; */ 
-    margin-left
+  width: 286px;
+  border: 1px solid #EEE;
+  border-radius: 15px;
+  padding: 7px;
+  background-color: #ffffff;
+}
+
+#list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#list span {
+  font-size: 13px;
+  font-weight: bold;
 }
