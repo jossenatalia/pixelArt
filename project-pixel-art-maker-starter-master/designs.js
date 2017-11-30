@@ -1,26 +1,29 @@
 function makeGrid() {
-    const rows = $('#input_height').val();
-    const cells = $('#input_width').val();
-    const table = $('#pixel_canvas');
-    const color = $('#colorPicker');
+  const rowsNum = $('#input_height').val();
+  const cellsNum = $('#input_width').val();
+  const table = $('#pixel_canvas');
+  const color = $('#colorPicker');
 
-    table.children().remove();
+  //remove last pixelArt
+  table.children().remove();
 
-    for (let i = 0; i < rows; i++) {
-        table.append('<tr></tr>');
-        for (let j = 0; j < cells; j++) {
-            table.children().last().append('<td></td>');
-        }
-    };
+  for (let row = 0; row < rowsNum; row++) {
+    table.append('<tr></tr>');
+    for (let cell = 0; cell < cellsNum; cell++) {
+      table.children().last().append('<td></td>');
+    }
+  };
 
-    $('td').click(function () {
-        $(this).css('background-color', color.val());
-    })
+  //use selected color
+  $('td').click(function () {
+    $(this).css('background-color', color.val());
+  })
 }
 
+//generate table
 $('#submit').click(function (e) {
-    e.preventDefault();
-    makeGrid();
+  e.preventDefault();
+  makeGrid();
 });
 
 
